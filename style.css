@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a{
+    color: gold;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1{
+    color: gold;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero button{
+    background: gold;
+    color: black;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover{
+    background: white;
+}
+
+.products{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products h2{
+    color: gold;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.product-card{
+    display: inline-block;
+    width: 280px;
+    margin: 15px;
+    padding: 20px;
+    background: #1a1a1a;
+    border: 2px solid gold;
+    border-radius: 15px;
+    vertical-align: top;
+    transition: 0.3s;
+}
+
+.product-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px gold;
+}
+
+.product-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3{
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.product-card p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.product-card h4{
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.product-card button{
+    background: gold;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card button:hover{
+  .product-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px gold;
+}
+    background: white;
+}
+
+@media (max-width:768px){
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .product-card{
+        width:90%;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:10px;
+    }
+}
+.about{
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.about h2{
+    color: gold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p{
+    color: white;
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+.contact{
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+.contact h2{
+    color: gold;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.contact p{
+    color: white;
+    font-size: 20px;
+    margin: 12px 0;
+}
+.products{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products h2{
+    color: gold;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.product-card{
+    display: inline-block;
+    width: 280px;
+    margin: 20px;
+    background: #1a1a1a;
+    border: 2px solid gold;
+    border-radius: 15px;
+    padding: 20px;
+    vertical-align: top;
+    transition: 0.3s;
+cursor: pointer;
+}
+
+.product-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h4{
+    color: gold;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+footer{
+    background: #111;
+    color: gold;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+.shop-btn{
+    display: inline-block;
+    background-color: gold;
+    color: black;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.shop-btn:hover{
+    background-color: white;
+}
+.whatsapp{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.whatsapp-btn{
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover{
+    background-color: #1DA851;
+}
+.cart-btn{
+    background: gold;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.cart-btn:hover{
+    background: white;
+    color: black;
+}
+.cart-icon{
+    background: gold;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 20px;
+}

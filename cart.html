@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+</nav>
+
+<h1 style="text-align:center; margin:30px 0;">
+🛒 Shopping Cart
+</h1>
+
+<div id="cart-items"></div>
+
+<h2 style="text-align:center; color:gold;">
+Total: <span id="total-price">0</span> EGP
+</h2>
+
+<div style="text-align:center; margin:30px 0;">
+    <button id="checkout-btn" class="shop-btn">
+        Checkout via WhatsApp
+    </button>
+</div>
+
+<script>
+
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const cartItems = document.getElementById("cart-items");
+const totalPrice = document.getElementById("total-price");
+
+let total = 0;
+
+cartItems.innerHTML = "";
+
+cart.forEach(product => {
+
+    total += product.price;
+
+    cartItems.innerHTML += `
+    <div style="border:2px solid gold;padding:15px;margin:15px;border-radius:10px;">
+        <h3>${product.name}</h3>
+        <p>${product.price} EGP</p>
+    </div>
+    `;
+
+});
+
+totalPrice.textContent = total;
+
+document.getElementById("checkout-btn").addEventListener("click", function () {
+
+    if (cart.length === 0) {
+        alert("Cart is empty");
+        return;
+    }
+
+    let message = "Hello, I want to order:\n\n";
+
+    cart.forEach(product => {
+        message += product.name + " - " + product.price + " EGP\n";
+    });
+
+    message += "\nTotal: " + total + " EGP";
+
+    const url = "https://wa.me/201020306672?text=" + encodeURIComponent(message);
+
+    window.location.href = url;
+
+});
+
+</script>
+
+</body>
+</html>
