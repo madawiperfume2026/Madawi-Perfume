@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Madawi Perfume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-card">
+        <h3>Madawi Gold</h3>
+        <p>Luxury Arabic Perfume</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Madawi Rose</h3>
+        <p>Elegant Floral Perfume</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Madawi Oud</h3>
+        <p>Premium Oud Perfume</p>
+        <button>Add to Cart</button>
+    </div>
+
+</section>
+
+</body>
+</html>
